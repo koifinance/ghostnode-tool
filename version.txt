@@ -1,0 +1,5 @@
+version_str = '0.9.19r4-dev'
+exe_mac = 'https://github.com/nixplatform/ghostnode-tool/releases'
+exe_win = 'https://github.com/nixplatform/ghostnode-tool/releases'
+exe_win32 = 'https://github.com/nixplatform/ghostnode-tool/releases'
+exe_linux = 'https://github.com/nixplatform/ghostnode-tool/releases'

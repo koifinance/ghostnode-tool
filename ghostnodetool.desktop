@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=Ghostnode (NIX masternode) activation tool
+Exec=GhostnodeTool
+GenericName=Masternode activation tool
+Icon=ghostnode-tool
+Name=Ghostnode Tool
+Categories=Finance;Network;
+StartupNotify=false
+Terminal=false
+Type=Application

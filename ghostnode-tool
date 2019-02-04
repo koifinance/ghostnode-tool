@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ -e venv/bin/activate ]]; then
+	. venv/bin/activate
+fi
+git rev-parse --short HEAD > git-rev.txt
+./src/ghostnode_tool.py
