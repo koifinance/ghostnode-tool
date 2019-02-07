@@ -1483,13 +1483,7 @@ class MainWindow(QMainWindow, WndUtils, ui_main_dlg.Ui_MainWindow):
 
             info = self.dashd_intf.getinfo(verify_node=True)
             node_protocol_version = int(info['protocolversion'])
-            node_blocks = int(info['blocks'])
-            if self.curMasternode.use_default_protocol_version or not self.curMasternode.protocol_version:
-                protocol_version = node_protocol_version
-                if protocol_version == 90025 and node_blocks < 89300:
-                    protocol_version = 90024
-            else:
-                protocol_version = self.curMasternode.protocol_version
+            protocol_version = node_protocol_version
 
             serialize_for_sig = self.curMasternode.ip + ':' + self.curMasternode.port + str(int(sig_time)) + \
                                 binascii.unhexlify(bitcoin.hash160(collateral_pubkey))[::-1].hex() + \

@@ -830,7 +830,7 @@ class DashdInterface(WndUtils):
     @control_rpc_call
     def getinfo(self, verify_node: bool = True):
         if self.open():
-            info = self.proxy.getinfo()
+            info = self.proxy.getnetworkinfo()
             if verify_node:
                 node_under_testnet = info.get('testnet')
                 if self.config.is_testnet() and not node_under_testnet:
