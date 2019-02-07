@@ -4,4 +4,4 @@ if [[ -e venv/bin/activate ]]; then
 	. venv/bin/activate
 fi
 git rev-parse --short HEAD > git-rev.txt
-./src/znode_tool.py
+./src/ghostnode_tool.py

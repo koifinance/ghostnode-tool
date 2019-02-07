@@ -1137,7 +1137,7 @@ class MainWindow(QMainWindow, WndUtils, ui_main_dlg.Ui_MainWindow):
         if copy_values_from_current and cur_masternode_sav:
             mn_template = cur_masternode_sav.name
         else:
-            mn_template = 'ZN'
+            mn_template = 'GN'
         name_found = None
         for nr in range(1, 100):
             exists = False
@@ -1445,7 +1445,7 @@ class MainWindow(QMainWindow, WndUtils, ui_main_dlg.Ui_MainWindow):
                 if found:
                     if utxo.get('satoshis', None) != 4000000000000:
                         if self.queryDlg(
-                                message="Collateral transaction output should equal 4000000000000 Satoshis (1000 NIX)"
+                                message="Collateral transaction output should equal 4000000000000 Satoshis (40000 NIX)"
                                         ", but its value is: %d Satoshis.\n\nDo you really want to continue?"
                                         % (utxo['satoshis']),
                                 buttons=QMessageBox.Yes | QMessageBox.Cancel,
