@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=Ghostnode (NIX masternode) activation tool
-Exec=GhostnodeTool
+Exec=Ghostnode Tool
 GenericName=Masternode activation tool
 Icon=ghostnode-tool
 Name=Ghostnode Tool

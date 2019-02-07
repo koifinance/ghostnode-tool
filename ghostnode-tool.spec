@@ -24,7 +24,7 @@ with open(os.path.join(base_dir, 'version.txt')) as fptr:
 
 add_files = [
  ('img/ghostnode-tool.png','/img'),
- ('img/ghostnodeghostnode-tool.ico','/img'),
+ ('img/ghostnode-tool.ico','/img'),
  ('img/arrow-right.ico','/img'),
  ('img/hw-disconnect.png','/img'),
  ('img/hw-test.png','/img'),
